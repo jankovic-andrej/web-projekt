@@ -21,3 +21,10 @@ Mobiteli do 600px @media (max-width: 600px)
 Tableti 601px – 1024px @media (max-width: 1024px)
 Laptopi 1025px – 1440px @media (max-width: 1440px)
 Veliki ekrani iznad 1440px @media (min-width: 1441px)
+
+Fontovi:
+
+
+@media( min-width: 601px) and (max-width: 1024px)
+@media( min-width: 1025px) and (max-width: 1440px)
+@media( min-width: 1441px)
