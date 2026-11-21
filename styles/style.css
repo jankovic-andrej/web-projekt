@@ -16,6 +16,10 @@ header nav li{
     display: flex;
 }
 
+header li:hover{
+    background-color: var(--boja-2-hover) ;
+}
+
 nav a {
     display: flex;
     width: 100%;
@@ -56,4 +60,8 @@ footer ul li {
     color: var(--boja-1);
     font-family: var(--font-navigacija);
     font-size: 0.9rem;
+}
+
+.active{
+    background-color: var(--boja-2-active);
 }
