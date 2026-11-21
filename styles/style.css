@@ -1,0 +1,73 @@
+:root{
+    --boja-1: #FFF8EC;
+    --boja-2: #2F5D3A;
+    --boja-3: #D63A2B;
+    --boja-4 :#222222;
+    --font-navigacija: 'Fredoka', sans-serif;
+}
+
+*{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 0px;
+}
+
+nav a {
+        border-bottom: 1px solid var(--boja-1);
+        display: flex;
+        width: 100%;
+        height: 2.7rem;
+        background-color: var(--boja-2);
+        text-decoration: none;
+        color: var(--boja-1);
+        font-size: 1.4rem;
+        font-family: var(--font-navigacija);
+    }
+
+/*Mobitel*/
+@media (max-width: 600px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav ul li{
+        padding: 0px;
+    }
+    nav a {
+        border-bottom: 1px solid var(--boja-1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2.7rem;
+        background-color: var(--boja-2);
+        text-decoration: none;
+        color: var(--boja-1);
+        font-size: 1.4rem;
+        font-family: var(--font-navigacija);
+    }
+}
+
+/*Tablet*/
+@media( min-width: 601px) and (max-width: 1024){
+
+}
+
+/*Laptop*/
+@media( min-width: 1025px) and (max-width: 1440){
+
+}
+/*Veliki ekrani*/
+@media( min-width: 1441px){
+
+}
