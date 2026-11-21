@@ -43,5 +43,14 @@
         font-size: 1.2rem;
     }
 
-    
+
+    footer {
+        height: 5rem;
+    }
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 }

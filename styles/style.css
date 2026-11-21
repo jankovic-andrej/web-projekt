@@ -31,8 +31,29 @@ nav a {
 
 /*TEMP*/
 main{
-    height: 2000px;
+    height: 500px;
 }
 
+footer{
+    height: 3rem;
 
+}
 
+footer ul{
+    margin:  0px;
+    display: flex;
+    height: 100%;
+    padding: 0px;
+    
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--boja-1);
+    font-family: var(--font-navigacija);
+    font-size: 0.9rem;
+}
