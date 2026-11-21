@@ -6,12 +6,12 @@
 ul {
     background-color: var(--boja-2);
 }
-nav ul{
+header nav ul{
     display: flex;
     padding: 0px;
     margin: 0px;
 }
-nav li{
+header nav li{
     padding: 0px;
     display: flex;
 }
@@ -29,8 +29,10 @@ nav a {
 }
 
 
-
-
+/*TEMP*/
+main{
+    height: 2000px;
+}
 
 
 
