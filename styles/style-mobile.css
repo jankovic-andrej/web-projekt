@@ -2,14 +2,46 @@
 /*Mobitel*/
 
 @media (max-width: 600px) {
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--boja-2);
+    }
+
+    header nav{
+        position: relative;
+    }
+
+    .hamburger{
+        display: block;
+        width: 100%;
+        height: 2rem;
+        background-color: var(--boja-1);
+        border: none;
+    }
+
     nav ul{
+        display: none;
         flex-direction: column;
-    } 
-    nav a {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--boja-2);
+    }
+
+    nav ul.otvoreno{
+        display: flex;
+    }
+
+    nav a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
         height: 2.75rem;
         font-size: 1.2rem;
     }
+
+    
 }
