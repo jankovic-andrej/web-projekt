@@ -8,14 +8,6 @@
     --font-navigacija: 'Fredoka', sans-serif;
 }
 
-* {
-    list-style-type: none;
-}
-
-ul {
-    background-color: var(--boja-2);
-}
-
 header {
     position: sticky;
     top: 0;
@@ -39,7 +31,7 @@ header nav {
     }
 }
 
-header nav ul {
+.nav-list {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -60,32 +52,33 @@ header nav ul {
     }
 }
 
-nav ul.otvoreno {
+.nav-list.otvoreno {
     display: flex;
 }
 
-header nav li {
+.nav-item {
     display: flex;
     padding: 0;
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
     @media (min-width: 601px) {
         flex: 1;
         height: 100%;
-        border-right: 1px solid black;
+        border-right: 1px solid rgba(255, 255, 255, 0.2); 
+        border-bottom: none;
     }
 }
 
-header nav li:last-child {
+.nav-item:last-child {
     @media (min-width: 601px) {
         border-right: none;
     }
 }
 
-header li:hover {
+.nav-item:hover {
     background-color: var(--boja-2-hover);
 }
 
-nav a {
+.nav-link{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,7 +97,7 @@ nav a {
     }
 }
 
-.active {
+.nav-link.active {
     background-color: var(--boja-2-active);
 }
 
@@ -112,41 +105,4 @@ main {
     height: 500px;
 }
 
-footer {
-    height: 5rem;
 
-    @media (min-width: 601px) {
-        height: 3rem;
-    }
-}
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
-    @media (min-width: 601px) {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-}
-
-footer ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    color: var(--boja-1);
-    font-family: var(--font-navigacija);
-    font-size: 0.9rem;
-
-    @media (min-width: 601px) {
-        flex: 1;
-    }
-}
