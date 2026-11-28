@@ -1,18 +1,37 @@
 :root {
-    --boja-1: #FFF8EC;
-    --boja-2: #2F5D3A;
-    --boja-2-active: #184623;
-    --boja-2-hover: #3f8d51;
-    --boja-3: #D63A2B;
-    --boja-4: #222222;
     --font-navigacija: 'Fredoka', sans-serif;
+    --boja-text-1: #FFF8EC;
+    
+    --footer-header-color: rgba(34,34,34,0.7);
+    --footer-header-color-active: rgba(61, 60, 60, 0.7);
+    --footer-header-color-hover: rgba(61, 60, 60, 0.7);
+
+    --nav-border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/background-img.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+main{
+    height: 1000px;
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--boja-2);
 }
 
 header nav {
@@ -23,7 +42,7 @@ header nav {
     display: block;
     width: 100%;
     height: 2rem;
-    background-color: var(--boja-1);
+    background-color: var(--boja-text-1);
     border: none;
 
     @media (min-width: 601px) {
@@ -40,7 +59,7 @@ header nav {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: var(--boja-2);
+    background-color: var(--footer-header-color);
 
     @media (min-width: 601px) {
         display: flex;
@@ -59,11 +78,11 @@ header nav {
 .nav-item {
     display: flex;
     padding: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: var(--nav-border);
     @media (min-width: 601px) {
         flex: 1;
         height: 100%;
-        border-right: 1px solid rgba(255, 255, 255, 0.2); 
+        border-right: var(--nav-border);
         border-bottom: none;
     }
 }
@@ -75,7 +94,7 @@ header nav {
 }
 
 .nav-item:hover {
-    background-color: var(--boja-2-hover);
+    background-color: var( --footer-header-color-hover);
 }
 
 .nav-link{
@@ -86,7 +105,7 @@ header nav {
     width: 100%;
     height: 2.75rem;
     text-decoration: none;
-    color: var(--boja-1);
+    color: var(--boja-text-1);
     font-family: var(--font-navigacija);
     font-size: 1.2rem;
     border: none;
@@ -98,17 +117,17 @@ header nav {
 }
 
 .nav-link.active {
-    background-color: var(--boja-2-active);
+    background-color: var(--footer-header-color-active);
 }
 
 
 
 footer{
     height: auto;
-    background-color: var(--boja-2-hover);
+    background-color: var(--footer-header-color);
     font-family: var(--font-navigacija);
     font-weight: 500;
-    color: var(--boja-1);
+    color: var(--boja-text-1);
     font-size: 1rem;
     
 }
